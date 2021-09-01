@@ -12,7 +12,7 @@
     "copy-assets": "npx ts-node scripts/copyAssets",
     "lint": "npx tslint -c tslint.json -p tsconfig.json --fix",
     "tsc": "tsc",
-    "build": "npx npm-run-all clean lint tsc copy-assets",
+    "build": "npx npm-run-all clean tsc copy-assets",
     "dev:start": "npx npm-run-all build start",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start": "node .",
